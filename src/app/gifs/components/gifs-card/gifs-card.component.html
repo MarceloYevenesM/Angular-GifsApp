@@ -1,11 +1,13 @@
 
-  <div class="card mb-2 text-center bg-dark">
+  <div class="card mb-2 text-center bg-dark text-center">
+
+    <shared-lazy-image></shared-lazy-image>
 
     <!-- Hacer el binding(El valor sea una expression de javascript) -->
-    <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="car-img-top">
+   <!--  <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="car-img-top"> -->
 
     <div class="card-body text-white">
-      <p class="card-text">{{gif.title}}</p>
+      <p class="card-text">{{gif.title || 'No title'}}</p>
     </div>
 
   </div>
